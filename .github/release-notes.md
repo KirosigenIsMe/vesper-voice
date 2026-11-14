@@ -1,15 +1,17 @@
-Нативная голосовая студия на Rust. Навсегда бесплатно: без PRO, аккаунтов и подписок.
+A native voice studio written in Rust. Free forever: no PRO tier, accounts or subscriptions.
 
-**Для обычной установки:** скачай `Vesper-…-Setup-x64.exe`. Установщик включает базовый VB-CABLE, проверяет существующий драйвер и автоматически устанавливает его при необходимости. Windows запросит права администратора; после первой установки драйвера может потребоваться перезагрузка.
+**Standard installation:** download `Vesper-…-Setup-x64.exe`. Setup includes the base VB-CABLE driver, checks for an existing installation and installs it automatically if needed. Windows will request administrator privileges; the first driver installation may require a restart.
 
-**Для переносного запуска:** распакуй `Vesper-…-Portable-x64.zip` и запусти `Vesper.exe`. Для системного микрофона потребуется VB-CABLE. Отдельный `Vesper.exe` также доступен, а соответствующие исходники находятся в Source ZIP. Контрольные суммы — в `SHA256SUMS.txt`.
+**Portable use:** extract `Vesper-…-Portable-x64.zip` and run `Vesper.exe`. Routing processed audio to other applications requires VB-CABLE. A standalone `Vesper.exe` is also available, with matching sources in the Source ZIP. Checksums are provided in `SHA256SUMS.txt`.
 
-- 24 голоса и 26 ручных параметров.
-- Саундборд, свои WAV, запись обработанного голоса.
-- Глобальные F6 / F7 / F8.
-- Назначение виртуального микрофона Windows и восстановление при остановке/аварии.
-- Оптимизированный DSP, локальная обработка без сети.
+- 24 voices and 26 manual controls.
+- Soundboard, custom WAV files and processed voice recording.
+- Global F6 / F7 / F8 hotkeys.
+- Windows default microphone routing with restoration on stop or crash.
+- Optimized DSP and local, offline audio processing.
 
-Это DSP-эффекты, не нейросетевое клонирование. Приложению, закрепившему физический микрофон, нужно выбрать CABLE Output. Файлы релиза пока без подписи издателя; SHA-256 подтверждает целостность скачанного файла, но не заменяет цифровую подпись.
+**Interface language:** the 1.2.0 application UI is in Russian. Repository documentation and release notes are in English.
 
-VB-CABLE — отдельный продукт **VB-Audio Software**, donationware. Автор: [vb-cable.com](https://www.vb-cable.com/). [Поддержать VB-Audio и условия лицензирования](https://vb-audio.com/Services/licensing.htm). Его оригинальные файлы и лицензия сохранены без изменений; GPL VESPER не распространяется на драйвер.
+These are DSP effects, not neural voice cloning. Applications explicitly using a physical microphone need to select CABLE Output. Release binaries do not yet have a publisher code signature; SHA-256 verifies file integrity but does not replace a digital signature.
+
+VB-CABLE is a separate donationware product by **VB-Audio Software**. Author: [vb-cable.com](https://www.vb-cable.com/). [Support VB-Audio and review licensing terms](https://vb-audio.com/Services/licensing.htm). Its original files and license are preserved unchanged; VESPER's GPL license does not cover the driver.

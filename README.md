@@ -6,136 +6,138 @@
   <img src="https://img.shields.io/badge/Free-Forever-97C09D?style=for-the-badge" alt="Free forever" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-242528?style=for-the-badge" alt="GPLv3" /></a>
   <br /><br />
-  <strong>Голосовая студия, которая принадлежит тебе.</strong><br />
-  24 голоса. 26 параметров. Саундборд. Запись. Всё на твоём компьютере.
+  <strong>A voice studio you can call your own.</strong><br />
+  24 voices. 26 controls. Soundboard. Recording. All on your computer.
   <br /><br />
-  <a href="#начать-за-минуту">Установка</a> · <a href="#что-умеет-vesper">Возможности</a> · <a href="#почему-vesper">Сравнение</a> · <a href="#маленький-по-размеру-полноценный-в-работе">Ресурсы</a> · <a href="#сборка-из-исходников">Сборка</a>
+  <a href="#get-started">Download</a> · <a href="#features">Features</a> · <a href="#why-vesper">Comparison</a> · <a href="#small-footprint-full-studio">Performance</a> · <a href="#build-from-source">Build</a>
 </div>
 
 <br />
 
-![Интерфейс VESPER — голоса, осциллограмма и параметры обработки](docs/media/vesper.png)
+![VESPER studio — voice presets, waveform and effect controls](docs/media/vesper.png)
 
-## Бесплатно. Навсегда.
+## Free. Forever.
 
-**VESPER навсегда останется бесплатным проектом.** Без PRO-версии, подписок, регистрации, ежедневной ротации доступных голосов и платной разблокировки настроек. Все встроенные возможности доступны сразу. Это обещание проекта; уже выпущенный код доступен по [GNU GPL v3](LICENSE).
+**VESPER will always remain a free project.** No PRO tier, subscriptions, registration, rotating daily voices or paid controls. Every built-in feature is available from the start. This is the project's commitment; released source code is available under [GNU GPL v3](LICENSE).
 
-Интерфейс и аудиодвижок написаны на **Rust**. Нативное окно, локальная обработка, прямой доступ к Windows Audio. Без Electron, встроенного браузера, JavaScript-интерфейса и облачного сервера. Библиотеки, Windows API и внешний драйвер имеют собственные лицензии.
+The interface and audio engine are written in **Rust**: a native window, local processing and direct access to Windows Audio. No Electron, embedded browser, JavaScript interface or cloud server. Libraries, Windows APIs and the external audio driver have their own licenses.
 
-## Начать за минуту
+## Get started
 
-1. Открой [последний релиз](../../releases/latest) и скачай **`Vesper-…-Setup-x64.exe`**.
-2. Запусти Setup и подтверди запрос Windows. **VB-CABLE устанавливается автоматически, если его ещё нет**; опция включена по умолчанию. Установленный драйвер не переустанавливается.
-3. Если установщик предложит перезагрузку после добавления драйвера, перезагрузи Windows.
-4. Открой VESPER, выбери физический микрофон и голос. Нажми **«Включить голос»**.
-5. В игре, Discord или браузере выбери **CABLE Output** либо системный микрофон **«По умолчанию»**. Уже открытый захват микрофона может потребовать перезапуска.
+1. Open the [latest release](../../releases/latest) and download **`Vesper-…-Setup-x64.exe`**.
+2. Run Setup and accept the Windows permission prompt. **VB-CABLE is installed automatically if missing**; this option is enabled by default. An existing driver is left in place.
+3. Restart Windows if the installer requests it after adding the driver.
+4. Open VESPER, select your physical microphone and a voice, then press the main play button to start processing.
+5. In your game, Discord or browser, select **CABLE Output** or the **Default** system microphone. An application already capturing audio may need to restart its microphone capture.
 
-**Нужна переносная версия?** Распакуй `Vesper-…-Portable-x64.zip` и запусти `Vesper.exe`. Rust и инструменты разработки для запуска не нужны. Для передачи обработанного голоса другим программам нужен VB-CABLE; его оригинальный установщик находится в `VirtualCable`.
+**Prefer a portable version?** Extract `Vesper-…-Portable-x64.zip` and run `Vesper.exe`. Rust and development tools are not required to run the app. Sending processed audio to other applications requires VB-CABLE; its original installer is included in `VirtualCable`.
 
-> VB-CABLE — отдельный драйвер **VB-Audio Software**, donationware. Автор: [vb-cable.com](https://www.vb-cable.com/). [Поддержать автора и посмотреть условия](https://vb-audio.com/Services/licensing.htm). Файлы драйвера распространяются без изменений. Бесплатность VESPER не отменяет условия VB-Audio, в том числе для корпоративного использования.
+**Interface language:** the current 1.2.0 application UI is in Russian, as shown above. This repository's main documentation and release notes are in English.
 
-## Что умеет VESPER
+> VB-CABLE is a separate donationware driver by **VB-Audio Software**. Author: [vb-cable.com](https://www.vb-cable.com/). [Support the author and review licensing terms](https://vb-audio.com/Services/licensing.htm). Its files are distributed unchanged. VESPER being free does not override VB-Audio's terms, including those for professional use.
 
-| Голос | Контроль | Работа |
+## Features
+
+| Voice | Controls | Workflow |
 |---|---|---|
-| **24 готовых характера** — от Velvet и Broadcast до Android и Arcade | **26 ручных параметров**, свои пресеты и JSON-обмен | **Системный микрофон** Windows с возвратом прежнего устройства |
-| Pitch, вибрато, кольцевая модуляция и битовая глубина | Трёхполосный EQ, фильтр высоких, гейт, компрессор и деэссер | **Саундборд:** 8 звуков, свои WAV, drag-and-drop |
-| Перегруз, эхо, реверберация и dry/wet | Усиление входа/выхода, громкость клипов, буфер и мониторинг | **WAV-запись**, уровни сигнала, осциллограмма и автосохранение |
+| **24 voice presets**, from Velvet and Broadcast to Android and Arcade | **26 manual controls**, custom presets and JSON import/export | **Windows default microphone** routing with restoration of the previous device |
+| Pitch, vibrato, ring modulation and bit depth | Three-band EQ, high-pass filter, gate, compressor and de-esser | **Soundboard:** 8 sounds, custom WAV files and drag-and-drop |
+| Distortion, echo, reverb and dry/wet mix | Input/output gain, clip volume, buffer and monitoring | **WAV recording**, level meters, waveform and automatic settings persistence |
 
-**F6** — эффекты / чистый голос · **F7** — заглушить выход · **F8** — запись.<br />
-**Ctrl + 1…8** — звуки саундборда в активном окне. F6–F8 работают глобально и отключаются в настройках.
+**F6** — effects / clean voice · **F7** — mute output · **F8** — record.<br />
+**Ctrl + 1…8** — soundboard clips while the window is focused. F6–F8 work globally and can be disabled in settings.
 
-Системный режим назначает CABLE Output основным входом Windows для трёх ролей. При остановке, закрытии или ошибке аудиопотока возвращается прежний микрофон. Отдельный маленький процесс и журнал переключения помогают восстановить вход после аварии.
+System mode sets CABLE Output as the default Windows input for all three audio roles. Stopping, closing or encountering an audio stream error restores the previous microphone. A small watchdog process and a routing journal help recover the input after a crash.
 
-## Почему VESPER
+## Why VESPER?
 
-**Для обычных голосовых эффектов не нужен платный тариф.** Сильная сторона VESPER — полностью доступная ручная студия, автономная работа и собственный исходный код.
+**Everyday voice effects should be available without a paid plan.** VESPER offers a fully accessible manual studio, offline processing and source code you can build and change yourself.
 
-| Что важно | VESPER | Voicemod FREE / PRO |
+| What matters | VESPER | Voicemod FREE / PRO |
 |---|---|---|
-| Доступ к встроенным голосам | Все 24 постоянно доступны | В FREE — ограниченная ежедневная подборка; полная библиотека — PRO |
-| Создание и сохранение своих голосов | 26 параметров, без покупки | VoiceLab — функция PRO |
-| Аккаунт и интернет для работы VESPER | Не нужны | Официальные требования предусматривают подключение к сервисам и вход в аккаунт |
-| Возможность доработать свою студию | Исходники и сборка доступны здесь | Набор функций определяется поставщиком |
-| Нейросетевое преобразование голоса | Нет, используются DSP-эффекты | Есть AI-голоса и значительно более широкий каталог |
+| Access to built-in voices | All 24 are always available | FREE has a limited daily selection; the full library requires PRO |
+| Create and save custom voices | 26 controls, no purchase required | VoiceLab is a PRO feature |
+| Account and internet connection | Not required to use VESPER | Official requirements include service connectivity and account sign-in |
+| Customize the studio itself | Source and build instructions are available here | Features are determined by the vendor |
+| Neural voice conversion | DSP effects only | AI voices and a much broader catalog |
 
-Источники: [Voicemod FREE и PRO](https://support.voicemod.net/hc/en-us/articles/360014300760-Voicemod-Features-Free-vs-PRO), [системные требования](https://support.voicemod.net/hc/en-us/articles/5641794328594-Voicemod-s-system-requirements-Windows-macOS), [AI и библиотека голосов](https://www.voicemod.net/en/voice-changer/). Проверено 14.11.2026.
+Sources: [Voicemod FREE vs. PRO](https://support.voicemod.net/hc/en-us/articles/360014300760-Voicemod-Features-Free-vs-PRO), [system requirements](https://support.voicemod.net/hc/en-us/articles/5641794328594-Voicemod-s-system-requirements-Windows-macOS), [AI voices and catalog](https://www.voicemod.net/en/voice-changer/). Checked November 14, 2026.
 
-[Clownfish](https://clownfish-translator.com/voicechanger/) тоже бесплатен и поддерживает системные эффекты и VST. В VESPER акцент на едином окне студии: голос, параметры, визуализация, саундборд и запись. Если нужны VST-плагины или внешний VC-клиент, возможности Clownfish могут подойти лучше.
+[Clownfish](https://clownfish-translator.com/voicechanger/) is also free and supports system effects and VST. VESPER focuses on a single studio window with voice controls, visualization, a soundboard and recording. Clownfish may be a better fit if you need VST plugins or an external voice conversion client.
 
-Численного сравнения RAM, CPU, задержки и качества с конкурентами пока нет. Мы публикуем измерения VESPER и не приписываем другим программам непроверенный расход памяти. Дизайн и удобство можно оценить по скриншоту и попробовать самостоятельно.
+We have not run comparative RAM, CPU, latency or audio quality benchmarks against other products. We publish VESPER's measurements without assigning unverified resource usage to competitors. Explore the screenshot and try the app to judge its design and workflow yourself.
 
-## Маленький по размеру. Полноценный в работе.
+## Small footprint. Full studio.
 
-| Измерение | Результат VESPER 1.1.1 |
+| Measurement | VESPER 1.1.1 result |
 |---|---:|
-| Самостоятельный EXE | **5,72 МБ** |
-| Собственная физическая ОЗУ: приложение + процесс восстановления | **≈37,5 МиБ** (≈39,4 МБ) |
-| CPU работающего системного режима на i5-12450H, 12 логических процессоров | **≈3,6% общей мощности CPU** |
-| Сокращение времени чистого DSP относительно 1.1.0 | **28,43%** |
-| Проверенные выходные сэмплы до/после оптимизации | **3 456 000, побитно одинаковы** |
+| Standalone EXE | **5.72 MB** |
+| Private physical RAM: app + recovery process | **≈37.5 MiB** (≈39.4 MB) |
+| Active system mode CPU on an i5-12450H with 12 logical processors | **≈3.6% of total CPU capacity** |
+| Reduction in pure DSP processing time versus 1.1.0 | **28.43%** |
+| Output samples checked before/after optimization | **3,456,000, bit-for-bit identical** |
 
-Это измерения предыдущей сборки того же аудиодвижка, а не обещание максимального расхода или сравнение с Voicemod. В 1.2.0 добавлена инфраструктура установки/релиза; точные размеры новых файлов смотри в Assets релиза. Память и CPU зависят от режима, окна, драйверов и записи. Методика и исходные числа сохранены в [benchmarks.json](docs/benchmarks.json).
+These measurements come from a previous build of the same audio engine. They are not maximum resource guarantees or comparisons with Voicemod. Version 1.2.0 adds installation and release infrastructure; see release assets for exact current file sizes. Memory and CPU usage depend on the operating mode, window state, drivers and recording. Methodology and supporting figures are in [benchmarks.json](docs/benchmarks.json).
 
-Коэффициенты эффектов пересчитываются при изменении настроек; постоянные вычисления вынесены из обработки сэмплов. Осциллограмма публикуется до 30 раз в секунду. В простое и при сворачивании UI обновляется раз в секунду, а горячие клавиши будят его отдельно. Настоящий звук обрабатывается непрерывно.
+Effect coefficients are recalculated when settings change, with constant calculations moved out of sample processing. Waveform data is published up to 30 times per second. When idle or minimized, the UI refreshes once per second, and hotkeys wake it separately. Audio processing remains continuous.
 
-## Что важно знать
+## Things to know
 
-- VESPER создаёт **DSP-эффекты**, а не копию голоса конкретного человека. Независимого сохранения формант и нейросетевого клонирования нет.
-- Обработка моно. Pitch/vibrato могут добавить до примерно **43 ms** собственной задержки; также влияют WASAPI, драйвер и приложение получателя. Общая задержка не измерена сквозным тестом.
-- Системный режим меняет входы по умолчанию. Программа, которая явно выбрала физический микрофон, продолжит его использовать до выбора **CABLE Output**.
-- VB-CABLE требует прав администратора для установки. После добавления драйвера может понадобиться перезагрузка. Установщик VESPER сохраняет общий драйвер при удалении приложения.
-- Сборки пока без цифровой подписи издателя. Для проверки целостности публикуются SHA-256; это не замена подписи.
+- VESPER provides **DSP effects**, not a copy of a specific person's voice. Independent formant preservation and neural voice cloning are not implemented.
+- Processing is mono. Pitch/vibrato can add up to approximately **43 ms** of algorithmic delay; WASAPI, drivers and the receiving application add their own latency. End-to-end latency has not been measured.
+- System mode changes default input devices. An application explicitly set to a physical microphone will keep using it until you select **CABLE Output**.
+- Installing VB-CABLE requires administrator privileges and may require a restart. Uninstalling VESPER preserves the shared driver.
+- Release binaries do not yet have a publisher code signature. SHA-256 checksums verify file integrity but do not replace a digital signature.
 
-Записи и настройки хранятся в `%LOCALAPPDATA%/Vesper`. Свои WAV и записи увеличивают место на диске; PCM WAV 48 kHz / mono / 16 bit — примерно **5,76 МБ в минуту**.
+Recordings and settings are stored in `%LOCALAPPDATA%/Vesper`. Custom WAV files and recordings add to disk usage; 48 kHz / mono / 16-bit PCM WAV uses approximately **5.76 MB per minute**.
 
-## Сборка из исходников
+## Build from source
 
-Нужны Windows x64, PowerShell 7.2+, [Rustup](https://rustup.rs/) и MinGW-w64 (`gcc`, `ar`, `windres` в PATH; подойдёт MSYS2 MINGW64). Версия Rust для релиза закреплена: **1.100.0 GNU**.
+Requirements: Windows x64, PowerShell 7.2+, [Rustup](https://rustup.rs/) and MinGW-w64 (`gcc`, `ar` and `windres` on PATH; MSYS2 MINGW64 works). The release Rust version is pinned to **1.100.0 GNU**.
 
 ```powershell
-# Путь нужен только если MinGW отсутствует в PATH.
+# Specify a path only if MinGW is not already on PATH.
 ./build.ps1 -MingwBin 'C:/msys64/mingw64/bin'
 
-# build.ps1 выбирает закреплённый GNU toolchain для текущего процесса.
+# build.ps1 selects the pinned GNU toolchain for its process.
 $env:RUSTUP_TOOLCHAIN = '1.100.0-x86_64-pc-windows-gnu'
 cargo fmt --check
 cargo test --locked
 ```
 
-Результат: `dist/bin/Vesper.exe`. Скрипт не содержит путей к компьютеру автора. Чтобы собрать полный Setup, portable ZIP, исходники и контрольные суммы:
+Output: `dist/bin/Vesper.exe`. Build scripts contain no paths specific to the author's computer. To package Setup, the portable ZIP, sources and checksums:
 
 ```powershell
 ./scripts/Write-ThirdPartyNotices.ps1
 ./scripts/New-Release.ps1 -SkipBuild
 ```
 
-Первый запуск скачает закреплённые по SHA-256 оригинальный VB-CABLE и инструменты упаковки в `.tools`. Они исключены из Git. Подписи официальных установочных пакетов проверяются. Компилятор Inno Setup извлекается в локальную папку и не устанавливается глобально.
+The first run downloads the original VB-CABLE package and packaging tools into `.tools`, using pinned SHA-256 hashes. These downloads are excluded from Git. Official installer package signatures are verified. The Inno Setup compiler is extracted locally without a global installation.
 
-Полный релиз создаётся в `dist/release/1.2.0`. Для повторной упаковки перенеси прежнюю `dist/stage/1.2.0` в архив: скрипт останавливается вместо смешивания старых и новых файлов.
+Release output is written to `dist/release/1.2.0`. Before repackaging, archive the previous `dist/stage/1.2.0` directory: the script stops rather than mixing old and new files.
 
 <details>
-<summary><strong>Проверки и выпуск релиза</strong></summary>
+<summary><strong>Verification and release workflow</strong></summary>
 
-- `cargo test --locked` проверяет DSP, очередь, WAV-запись и восстановление маршрутизации.
-- `Vesper.exe --self-test --output-dir=diagnostics` рендерит и проверяет все 24 голоса.
-- `cargo run --release --locked --example dsp_benchmark -- benchmark-results` запускает повторяемый тест DSP.
-- GitHub Actions проверяет сборку при push / pull request. Тег `v1.2.0`, совпадающий с Cargo.toml, собирает Setup, portable, исходники и SHA-256, проверяет установку приложения без вмешательства в драйверы и создаёт **черновик релиза**.
-- Секреты, токены, записи, пользовательские настройки, `.tools`, `target` и `dist` в исходники не включаются.
-- Чтобы выпустить версию, обнови Cargo.toml и `assets/app.rc`, затем создай и отправь соответствующий тег. Черновик публикуется владельцем репозитория после проверки.
+- `cargo test --locked` checks DSP, the queue, WAV recording and routing recovery.
+- `Vesper.exe --self-test --output-dir=diagnostics` renders and verifies all 24 voices.
+- `cargo run --release --locked --example dsp_benchmark -- benchmark-results` runs a repeatable DSP benchmark.
+- GitHub Actions verifies builds on push / pull request. A `v1.2.0` tag matching Cargo.toml builds Setup, portable, source and SHA-256 files, tests application installation without changing audio drivers, and creates a **draft release**.
+- Secrets, tokens, recordings, user settings, `.tools`, `target` and `dist` are excluded from the source package.
+- To release a new version, update Cargo.toml and `assets/app.rc`, then create and push the matching tag. The repository owner publishes the draft after verification.
 
-Для первой публикации установи [GitHub CLI](https://cli.github.com/), выполни `gh auth login`, затем `./scripts/Publish-GitHub.ps1`. Скрипт определит твой аккаунт, создаст публичный репозиторий **vesper-voice**, отправит исходники и тег. GitHub Actions подготовит черновик релиза; финальная публикация остаётся у владельца. Скрипт использует GitHub CLI без встроенных токенов.
+For an initial publication, install [GitHub CLI](https://cli.github.com/), run `gh auth login`, then `./scripts/Publish-GitHub.ps1`. The script detects your account, creates a public **vesper-voice** repository, and pushes the source and tag. GitHub Actions prepares a draft release; final publication remains with the owner. The script uses GitHub CLI without embedded tokens.
 
 </details>
 
-## Свобода и лицензии
+## Freedom and licenses
 
-Код VESPER — [GNU GPL v3](LICENSE): можно изучать, использовать, изменять и распространять с соблюдением лицензии. Обещание бесплатности относится к официальному проекту; GPL сама по себе не запрещает третьим лицам продавать свои копии и не передаёт права на сторонние компоненты.
+VESPER code is licensed under [GNU GPL v3](LICENSE): you can study, use, modify and redistribute it under the license's terms. The commitment to stay free applies to the official project; the GPL does not itself prohibit third parties from selling copies or grant rights to third-party components.
 
-Шрифты Noto — [SIL OFL 1.1](licenses/FONT-OFL.txt). Лицензии Rust-библиотек собраны в [THIRD-PARTY-NOTICES](licenses/THIRD-PARTY-NOTICES.txt). VB-CABLE — отдельный продукт VB-Audio со своими [условиями](licenses/VB-CABLE-NOTICE.txt); оригинальная лицензия лежит внутри его пакета.
+Noto fonts use [SIL OFL 1.1](licenses/FONT-OFL.txt). Rust dependency licenses are collected in [THIRD-PARTY-NOTICES](licenses/THIRD-PARTY-NOTICES.txt). VB-CABLE is a separate VB-Audio product with its own [terms](licenses/VB-CABLE-NOTICE.txt); its original license is included in the driver package.
 
 <div align="center">
   <br />
-  <strong>Твой голос. Твои настройки. Твоя программа.</strong><br />
+  <strong>Your voice. Your settings. Your studio.</strong><br />
   <sub>VESPER · Native Rust voice studio · Free forever</sub>
 </div>
