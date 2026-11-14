@@ -2,6 +2,7 @@
 mod audio;
 mod dsp;
 mod hotkeys;
+mod i18n;
 mod presets;
 mod routing;
 mod ui;
@@ -47,27 +48,46 @@ fn main() -> eframe::Result<()> {
     if std::env::args().any(|s| s == "--self-test") {
         return ui::self_test(&diagnostic_dir());
     }
-    let _instance = match routing::Instance::acquire() {
-        Ok(instance) => instance,
-        Err(e) => {
-            use windows::{
-                core::{w, PCWSTR},
-                Win32::UI::WindowsAndMessaging::{MessageBoxW, MB_OK},
-            };
-            let text: Vec<u16> = e.encode_utf16().chain(Some(0)).collect();
-            unsafe {
-                MessageBoxW(None, PCWSTR(text.as_ptr()), w!("VESPER"), MB_OK);
+    // Offline screenshots use a private profile and never acquire the live
+    // audio instance. They cannot start processing or change system routing.
+    let screenshot_mode = std::env::args().any(|arg| arg.starts_with("--screenshot="))
+        && !std::env::args().any(|arg| arg == "--audio-smoke");
+    let _instance = if screenshot_mode {
+        None
+    } else {
+        Some(match routing::Instance::acquire() {
+            Ok(instance) => instance,
+            Err(e) => {
+                use windows::{
+                    core::{w, PCWSTR},
+                    Win32::UI::WindowsAndMessaging::{MessageBoxW, MB_OK},
+                };
+                let text: Vec<u16> = e.encode_utf16().chain(Some(0)).collect();
+                unsafe {
+                    MessageBoxW(None, PCWSTR(text.as_ptr()), w!("VESPER"), MB_OK);
+                }
+                return Ok(());
             }
-            return Ok(());
-        }
+        })
     };
     let icon = image::load_from_memory(include_bytes!("../assets/vesper.png"))
         .unwrap()
         .into_rgba8();
     let (width, height) = icon.dimensions();
+    let qa_size = if screenshot_mode {
+        std::env::args().find_map(|arg| {
+            let (width, height) = arg.strip_prefix("--qa-size=")?.split_once('x')?;
+            Some([
+                width.parse::<f32>().ok()?.clamp(1100., 1920.),
+                height.parse::<f32>().ok()?.clamp(700., 1200.),
+            ])
+        })
+    } else {
+        None
+    };
     let options = eframe::NativeOptions {
         viewport: eframe::egui::ViewportBuilder::default()
-            .with_inner_size([1380., 740.])
+            .with_inner_size(qa_size.unwrap_or([1380., 740.]))
             .with_position([24., 12.])
             .with_min_inner_size([1100., 700.])
             .with_title("VESPER — Voice Studio")

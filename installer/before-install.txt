@@ -1,22 +1,21 @@
-VESPER — нативная голосовая студия на Rust
+VESPER — Native Rust voice studio
 
-VESPER навсегда бесплатен. Все встроенные голоса, параметры, саундборд и
-запись доступны без PRO-версии, аккаунта и подписки.
+VESPER is free forever. All built-in voices, controls, soundboard features and
+recording are available without a PRO tier, account or subscription.
 
-Установщик добавит приложение и ярлыки. Если базовый VB-CABLE ещё не
-установлен, выбранная по умолчанию опция установит его автоматически.
-Драйверу нужны права администратора; Windows может запросить подтверждение.
-После первой установки драйвера может понадобиться перезагрузка.
+Setup installs VESPER and its shortcuts. The default VB-CABLE option installs
+the base virtual audio driver automatically if it is missing. Driver setup
+requires administrator permission and may require a Windows restart.
 
-VB-CABLE — отдельное приложение VB-Audio Software / Vincent Burel.
-Сайт автора: www.vb-cable.com
+VB-CABLE is a separate product by VB-Audio Software / Vincent Burel.
+Author: www.vb-cable.com
 VB-CABLE is donationware, all participations are welcome.
-Поддержать автора или приобрести лицензию:
+Support the author or purchase a license:
 https://vb-audio.com/Services/licensing.htm
 
-Лицензия GPL VESPER не распространяется на VB-CABLE. Оригинальная лицензия
-драйвера сохранена в папке VirtualCable. Для профессионального/корпоративного
-использования действуют отдельные условия VB-Audio.
+VESPER's GPL license does not apply to VB-CABLE. The driver's original license
+is included in VirtualCable. Separate VB-Audio terms apply to professional
+and organizational use.
 
-Установленный VB-CABLE будет сохранён. При удалении VESPER общий драйвер,
-пользовательские записи и пресеты автоматически не удаляются.
+An existing VB-CABLE driver is preserved. Uninstalling VESPER does not remove
+the shared driver, your recordings or your custom presets.

@@ -1,0 +1,172 @@
+# English	Русский	Deutsch	Français	Español	Português	Italiano	Polski	Türkçe	Українська
+Voices	Голоса	Stimmen	Voix	Voces	Vozes	Voci	Głosy	Sesler	Голоси
+Studio	Студия	Studio	Studio	Estudio	Estúdio	Studio	Studio	Stüdyo	Студія
+Soundboard	Саундборд	Soundboard	Table de sons	Panel de sonidos	Painel de sons	Soundboard	Panel dźwięków	Ses panosu	Саундборд
+Recordings	Записи	Aufnahmen	Enregistrements	Grabaciones	Gravações	Registrazioni	Nagrania	Kayıtlar	Записи
+Settings	Настройки	Einstellungen	Réglages	Ajustes	Configurações	Impostazioni	Ustawienia	Ayarlar	Налаштування
+Language	Язык	Sprache	Langue	Idioma	Idioma	Lingua	Język	Dil	Мова
+Start voice	Включить голос	Stimme starten	Activer la voix	Activar voz	Ativar voz	Attiva voce	Włącz głos	Sesi başlat	Увімкнути голос
+Stop	Остановить	Stoppen	Arrêter	Detener	Parar	Ferma	Zatrzymaj	Durdur	Зупинити
+Mute	Заглушить	Stumm	Couper le son	Silenciar	Silenciar	Silenzia	Wycisz	Sustur	Вимкнути звук
+Unmute	Включить звук	Ton an	Rétablir le son	Activar sonido	Ativar som	Riattiva audio	Włącz dźwięk	Sesi aç	Увімкнути звук
+Effects	Эффекты	Effekte	Effets	Efectos	Efeitos	Effetti	Efekty	Efektler	Ефекти
+Monitor	Прослушивание	Mithören	Écoute	Escucha	Monitorar	Ascolto	Odsłuch	Dinleme	Прослуховування
+Input	Вход	Eingang	Entrée	Entrada	Entrada	Ingresso	Wejście	Giriş	Вхід
+Output	Выход	Ausgang	Sortie	Salida	Saída	Uscita	Wyjście	Çıkış	Вихід
+Record	Запись	Aufnehmen	Enregistrer	Grabar	Gravar	Registra	Nagraj	Kaydet	Запис
+Live	В эфире	Aktiv	En direct	En directo	Ao vivo	In diretta	Na żywo	Canlı	В ефірі
+Ready	Готово	Bereit	Prêt	Listo	Pronto	Pronto	Gotowe	Hazır	Готово
+System microphone	Микрофон системы	Systemmikrofon	Micro système	Micrófono del sistema	Microfone do sistema	Microfono di sistema	Mikrofon systemowy	Sistem mikrofonu	Мікрофон системи
+Local audio	Локальный звук	Lokales Audio	Audio local	Audio local	Áudio local	Audio locale	Dźwięk lokalny	Yerel ses	Локальний звук
+Voice controls	Параметры голоса	Stimmregler	Réglages de voix	Controles de voz	Controles de voz	Controlli voce	Ustawienia głosu	Ses kontrolleri	Параметри голосу
+Reset	Сброс	Zurücksetzen	Réinitialiser	Restablecer	Redefinir	Ripristina	Resetuj	Sıfırla	Скинути
+Tone	Тембр	Klang	Timbre	Timbre	Timbre	Timbro	Barwa	Tını	Тембр
+Dynamics	Динамика	Dynamik	Dynamique	Dinámica	Dinâmica	Dinamica	Dynamika	Dinamik	Динаміка
+Pitch & movement	Высота и движение	Tonhöhe & Bewegung	Hauteur et mouvement	Tono y movimiento	Tom e movimento	Tono e movimento	Wysokość i ruch	Perde ve hareket	Висота й рух
+Pitch	Высота тона	Tonhöhe	Hauteur	Tono	Tom	Altezza	Wysokość tonu	Perde	Висота тону
+Vibrato depth	Глубина вибрато	Vibratotiefe	Intensité du vibrato	Intensidad del vibrato	Intensidade do vibrato	Intensità vibrato	Głębokość vibrato	Vibrato derinliği	Глибина вібрато
+Vibrato rate	Скорость вибрато	Vibratorate	Vitesse du vibrato	Velocidad del vibrato	Velocidade do vibrato	Velocità vibrato	Szybkość vibrato	Vibrato hızı	Швидкість вібрато
+Equalizer	Эквалайзер	Equalizer	Égaliseur	Ecualizador	Equalizador	Equalizzatore	Korektor	Ekolayzır	Еквалайзер
+Bass · 160 Hz	Низкие · 160 Hz	Bass · 160 Hz	Graves · 160 Hz	Graves · 160 Hz	Graves · 160 Hz	Bassi · 160 Hz	Basy · 160 Hz	Bas · 160 Hz	Низькі · 160 Hz
+Body · 1.1 kHz	Середина · 1.1 kHz	Mitten · 1.1 kHz	Médiums · 1.1 kHz	Medios · 1.1 kHz	Médios · 1.1 kHz	Medi · 1.1 kHz	Średnie · 1.1 kHz	Orta · 1.1 kHz	Середні · 1.1 kHz
+Air · 4.8 kHz	Воздух · 4.8 kHz	Höhen · 4.8 kHz	Aigus · 4.8 kHz	Agudos · 4.8 kHz	Agudos · 4.8 kHz	Alti · 4.8 kHz	Wysokie · 4.8 kHz	Tiz · 4.8 kHz	Повітря · 4.8 kHz
+High cut	Срез высоких	Höhenfilter	Coupe-haut	Corte de agudos	Corte de agudos	Taglio alti	Filtr górnych	Tiz kesimi	Зріз високих
+Mix	Баланс	Mischung	Mixage	Mezcla	Mixagem	Mix	Miks	Karışım	Баланс
+Dry / wet	Чистый / эффект	Trocken / Effekt	Sec / effet	Seco / efecto	Seco / efeito	Secco / effetto	Czysty / efekt	Kuru / efekt	Чистий / ефект
+Texture	Текстура	Textur	Texture	Textura	Textura	Texture	Tekstura	Doku	Текстура
+Drive	Насыщение	Sättigung	Saturation	Saturación	Saturação	Saturazione	Nasycenie	Doygunluk	Насичення
+Robot	Роботизация	Roboter	Robotisation	Robotización	Robotização	Robotizzazione	Robotyzacja	Robot	Роботизація
+Ring frequency	Частота модулятора	Ringfrequenz	Fréquence de modulation	Frecuencia de modulación	Frequência de modulação	Frequenza modulatore	Częstotliwość modulacji	Modülasyon frekansı	Частота модулятора
+Bit depth	Битовая глубина	Bittiefe	Profondeur en bits	Profundidad de bits	Profundidade de bits	Profondità bit	Głębia bitowa	Bit derinliği	Бітова глибина
+Space	Пространство	Raum	Espace	Espacio	Espaço	Spazio	Przestrzeń	Alan	Простір
+Reverb	Реверберация	Hall	Réverbération	Reverberación	Reverberação	Riverbero	Pogłos	Yankılanma	Реверберація
+Room size	Размер комнаты	Raumgröße	Taille de la pièce	Tamaño de sala	Tamanho da sala	Dimensione stanza	Wielkość pokoju	Oda boyutu	Розмір кімнати
+Delay level	Уровень эха	Echopegel	Niveau d'écho	Nivel de eco	Nível de eco	Livello eco	Poziom echa	Eko seviyesi	Рівень луни
+Delay time	Время эха	Echozeit	Durée d'écho	Tiempo de eco	Tempo de eco	Tempo eco	Czas echa	Eko süresi	Час луни
+Feedback	Обратная связь	Rückkopplung	Réinjection	Realimentación	Realimentação	Retroazione	Sprzężenie	Geri besleme	Зворотний зв'язок
+Levels	Уровни	Pegel	Niveaux	Niveles	Níveis	Livelli	Poziomy	Seviyeler	Рівні
+Input gain	Усиление входа	Eingangsverstärkung	Gain d'entrée	Ganancia de entrada	Ganho de entrada	Guadagno ingresso	Wzmocnienie wejścia	Giriş kazancı	Підсилення входу
+Output gain	Усиление выхода	Ausgangsverstärkung	Gain de sortie	Ganancia de salida	Ganho de saída	Guadagno uscita	Wzmocnienie wyjścia	Çıkış kazancı	Підсилення виходу
+Gate & compressor	Гейт и компрессор	Gate & Kompressor	Gate et compresseur	Puerta y compresor	Gate e compressor	Gate e compressore	Bramka i kompresor	Geçit ve kompresör	Гейт і компресор
+Gate threshold	Порог гейта	Gate-Schwelle	Seuil du gate	Umbral de puerta	Limiar do gate	Soglia gate	Próg bramki	Geçit eşiği	Поріг гейта
+Compressor threshold	Порог компрессора	Kompressorschwelle	Seuil du compresseur	Umbral del compresor	Limiar do compressor	Soglia compressore	Próg kompresora	Kompresör eşiği	Поріг компресора
+Ratio	Степень сжатия	Verhältnis	Ratio	Relación	Relação	Rapporto	Stopień kompresji	Oran	Ступінь стиснення
+Attack	Атака	Attack	Attaque	Ataque	Ataque	Attacco	Atak	Atak	Атака
+Release	Восстановление	Release	Relâchement	Liberación	Liberação	Rilascio	Powrót	Bırakma	Відновлення
+De-esser	Деэссер	De-Esser	Dé-esseur	De-esser	De-esser	De-esser	De-esser	De-esser	Деесер
+Clip volume	Громкость клипов	Clip-Lautstärke	Volume des clips	Volumen de clips	Volume dos clipes	Volume clip	Głośność klipów	Klip ses düzeyi	Гучність кліпів
+Save custom voice	Сохранить свой голос	Eigene Stimme speichern	Enregistrer une voix	Guardar voz propia	Salvar voz própria	Salva voce personale	Zapisz własny głos	Özel sesi kaydet	Зберегти свій голос
+Search voices…	Поиск голоса…	Stimmen suchen…	Rechercher une voix…	Buscar voces…	Buscar vozes…	Cerca voci…	Szukaj głosów…	Ses ara…	Пошук голосу…
+★ Favorites	★ Избранное	★ Favoriten	★ Favoris	★ Favoritos	★ Favoritos	★ Preferiti	★ Ulubione	★ Favoriler	★ Обране
+☆ Favorites	☆ Избранное	☆ Favoriten	☆ Favoris	☆ Favoritos	☆ Favoritos	☆ Preferiti	☆ Ulubione	☆ Favoriler	☆ Обране
+All	Все	Alle	Tout	Todas	Todas	Tutte	Wszystkie	Tümü	Усі
+Character	Характер	Charakter	Caractère	Carácter	Caráter	Carattere	Charakter	Karakter	Характер
+Synthetic	Синтез	Synthetisch	Synthèse	Síntesis	Síntese	Sintesi	Synteza	Sentez	Синтез
+Atmosphere	Атмосфера	Atmosphäre	Ambiance	Ambiente	Ambiente	Atmosfera	Atmosfera	Atmosfer	Атмосфера
+Retro	Ретро	Retro	Rétro	Retro	Retrô	Retrò	Retro	Retro	Ретро
+Custom	Мои	Eigene	Personnelles	Propias	Próprias	Personali	Własne	Özel	Власні
+No voices found	Ничего не найдено	Keine Stimmen gefunden	Aucune voix trouvée	No se encontraron voces	Nenhuma voz encontrada	Nessuna voce trovata	Nie znaleziono głosów	Ses bulunamadı	Нічого не знайдено
+Try another search or save a custom voice in Studio.	Измени поиск или сохрани голос в Студии.	Andere Suche oder eigene Stimme im Studio speichern.	Modifiez la recherche ou créez une voix dans Studio.	Cambia la búsqueda o guarda una voz en Estudio.	Altere a busca ou salve uma voz no Estúdio.	Cambia ricerca o salva una voce nello Studio.	Zmień wyszukiwanie lub zapisz głos w Studio.	Aramayı değiştirin veya Stüdyo'da ses kaydedin.	Зміни пошук або збережи голос у Студії.
+Voice name	Название голоса	Name der Stimme	Nom de la voix	Nombre de voz	Nome da voz	Nome della voce	Nazwa głosu	Ses adı	Назва голосу
+Save voice	Сохранить голос	Stimme speichern	Enregistrer la voix	Guardar voz	Salvar voz	Salva voce	Zapisz głos	Sesi kaydet	Зберегти голос
+Enter a voice name	Введи название голоса	Namen eingeben	Saisissez un nom	Introduce un nombre	Insira um nome	Inserisci un nome	Wpisz nazwę głosu	Bir ses adı girin	Введи назву голосу
+This name already exists	Такое имя уже есть	Name bereits vorhanden	Ce nom existe déjà	Este nombre ya existe	Este nome já existe	Questo nome esiste già	Ta nazwa już istnieje	Bu ad zaten var	Така назва вже є
+Voice saved	Голос сохранён	Stimme gespeichert	Voix enregistrée	Voz guardada	Voz salva	Voce salvata	Głos zapisany	Ses kaydedildi	Голос збережено
+Export preset	Экспорт пресета	Preset exportieren	Exporter le préréglage	Exportar ajuste	Exportar predefinição	Esporta preset	Eksportuj preset	Ön ayarı dışa aktar	Експорт пресета
+Import preset	Импорт пресета	Preset importieren	Importer un préréglage	Importar ajuste	Importar predefinição	Importa preset	Importuj preset	Ön ayarı içe aktar	Імпорт пресета
+Preset exported	Пресет экспортирован	Preset exportiert	Préréglage exporté	Ajuste exportado	Predefinição exportada	Preset esportato	Preset wyeksportowany	Ön ayar dışa aktarıldı	Пресет експортовано
+Preset imported	Пресет импортирован	Preset importiert	Préréglage importé	Ajuste importado	Predefinição importada	Preset importato	Preset zaimportowany	Ön ayar içe aktarıldı	Пресет імпортовано
+Import failed	Ошибка импорта	Import fehlgeschlagen	Échec de l'import	Error de importación	Falha na importação	Importazione fallita	Błąd importu	İçe aktarma başarısız	Помилка імпорту
+Delete custom voice	Удалить свой голос	Eigene Stimme löschen	Supprimer cette voix	Eliminar voz propia	Excluir voz própria	Elimina voce personale	Usuń własny głos	Özel sesi sil	Видалити свій голос
+Voice deleted	Голос удалён	Stimme gelöscht	Voix supprimée	Voz eliminada	Voz excluída	Voce eliminata	Głos usunięty	Ses silindi	Голос видалено
+Custom voice	Свой голос	Eigene Stimme	Voix personnelle	Voz propia	Voz própria	Voce personale	Własny głos	Özel ses	Власний голос
+Built-in sounds	Встроенные звуки	Integrierte Sounds	Sons intégrés	Sonidos integrados	Sons integrados	Suoni integrati	Wbudowane dźwięki	Yerleşik sesler	Вбудовані звуки
+Stop clip	Остановить клип	Clip stoppen	Arrêter le clip	Detener clip	Parar clipe	Ferma clip	Zatrzymaj klip	Klibi durdur	Зупинити кліп
+Notification	Уведомление	Benachrichtigung	Notification	Notificación	Notificação	Notifica	Powiadomienie	Bildirim	Сповіщення
+Lift off	Взлёт	Start	Décollage	Despegue	Decolagem	Decollo	Start	Kalkış	Зліт
+Level up	Новый уровень	Levelaufstieg	Niveau supérieur	Subir de nivel	Novo nível	Nuovo livello	Nowy poziom	Seviye atlama	Новий рівень
+Alert	Тревога	Alarm	Alerte	Alerta	Alerta	Allarme	Alarm	Uyarı	Тривога
+Impact	Удар	Aufprall	Impact	Impacto	Impacto	Impatto	Uderzenie	Darbe	Удар
+UFO	НЛО	UFO	OVNI	OVNI	OVNI	UFO	UFO	UFO	НЛО
+Confirm	Подтверждение	Bestätigung	Confirmation	Confirmación	Confirmação	Conferma	Potwierdzenie	Onay	Підтвердження
+Power down	Выключение	Ausschalten	Extinction	Apagado	Desligamento	Spegnimento	Wyłączenie	Kapanış	Вимкнення
+Your sounds	Твои звуки	Eigene Sounds	Vos sons	Tus sonidos	Seus sons	I tuoi suoni	Twoje dźwięki	Sesleriniz	Твої звуки
+Add WAV	Добавить WAV	WAV hinzufügen	Ajouter un WAV	Añadir WAV	Adicionar WAV	Aggiungi WAV	Dodaj WAV	WAV ekle	Додати WAV
+Open folder	Открыть папку	Ordner öffnen	Ouvrir le dossier	Abrir carpeta	Abrir pasta	Apri cartella	Otwórz folder	Klasörü aç	Відкрити папку
+Refresh	Обновить	Aktualisieren	Actualiser	Actualizar	Atualizar	Aggiorna	Odśwież	Yenile	Оновити
+Drop WAV files here · up to 60 seconds	Перетащи WAV сюда · до 60 секунд	WAV hier ablegen · bis 60 Sekunden	Déposez un WAV ici · 60 secondes max.	Arrastra WAV aquí · hasta 60 segundos	Solte WAV aqui · até 60 segundos	Trascina WAV qui · fino a 60 secondi	Upuść WAV tutaj · do 60 sekund	WAV dosyasını bırakın · en fazla 60 saniye	Перетягни WAV сюди · до 60 секунд
+Play	Воспроизвести	Abspielen	Lire	Reproducir	Reproduzir	Riproduci	Odtwórz	Oynat	Відтворити
+WAV added	WAV добавлен	WAV hinzugefügt	WAV ajouté	WAV añadido	WAV adicionado	WAV aggiunto	Dodano WAV	WAV eklendi	WAV додано
+Record voice	Записать голос	Stimme aufnehmen	Enregistrer la voix	Grabar voz	Gravar voz	Registra voce	Nagraj głos	Sesi kaydet	Записати голос
+Stop recording	Завершить запись	Aufnahme stoppen	Arrêter l'enregistrement	Detener grabación	Parar gravação	Ferma registrazione	Zakończ nagranie	Kaydı durdur	Завершити запис
+No recordings yet	Записей пока нет	Noch keine Aufnahmen	Aucun enregistrement	Aún no hay grabaciones	Ainda não há gravações	Nessuna registrazione	Brak nagrań	Henüz kayıt yok	Записів поки немає
+Start processing and press Record.	Включи голос и нажми «Запись».	Stimme starten und Aufnahme drücken.	Activez la voix puis enregistrez.	Activa la voz y pulsa Grabar.	Ative a voz e clique em Gravar.	Attiva la voce e premi Registra.	Włącz głos i naciśnij Nagraj.	Sesi başlatıp Kaydet'e basın.	Увімкни голос і натисни «Запис».
+Still recording	Идёт запись	Aufnahme läuft	Enregistrement en cours	Grabando	Gravando	Registrazione in corso	Nagrywanie	Kaydediliyor	Триває запис
+Listen	Прослушать	Anhören	Écouter	Escuchar	Ouvir	Ascolta	Posłuchaj	Dinle	Прослухати
+Add to soundboard	В саундборд	Zum Soundboard	Ajouter aux sons	Añadir al panel	Adicionar ao painel	Aggiungi ai suoni	Dodaj do panelu	Panoya ekle	До саундборда
+Audio routing	Маршрутизация звука	Audio-Routing	Routage audio	Enrutamiento de audio	Roteamento de áudio	Instradamento audio	Przekierowanie dźwięku	Ses yönlendirme	Маршрутизація звуку
+Use as Windows microphone	Микрофон Windows	Als Windows-Mikrofon nutzen	Utiliser comme micro Windows	Usar como micrófono de Windows	Usar como microfone do Windows	Usa come microfono Windows	Użyj jako mikrofonu Windows	Windows mikrofonu olarak kullan	Мікрофон Windows
+System microphone active	Системный микрофон активен	Systemmikrofon aktiv	Micro système actif	Micrófono del sistema activo	Microfone do sistema ativo	Microfono di sistema attivo	Mikrofon systemowy aktywny	Sistem mikrofonu etkin	Системний мікрофон активний
+Starts with voice processing	Включится вместе с голосом	Startet mit der Verarbeitung	Démarre avec la voix	Se inicia con el procesamiento	Inicia com o processamento	Si avvia con la voce	Uruchamia się z głosem	Ses işlemeyle başlar	Увімкнеться разом із голосом
+Local monitoring and recording	Локальное прослушивание и запись	Lokales Mithören und Aufnehmen	Écoute et enregistrement locaux	Escucha y grabación locales	Escuta e gravação locais	Ascolto e registrazione locali	Lokalny odsłuch i nagrywanie	Yerel dinleme ve kayıt	Локальне прослуховування й запис
+Install VB-CABLE	Установить VB-CABLE	VB-CABLE installieren	Installer VB-CABLE	Instalar VB-CABLE	Instalar VB-CABLE	Installa VB-CABLE	Zainstaluj VB-CABLE	VB-CABLE yükle	Встановити VB-CABLE
+Refresh devices	Обновить устройства	Geräte aktualisieren	Actualiser les appareils	Actualizar dispositivos	Atualizar dispositivos	Aggiorna dispositivi	Odśwież urządzenia	Aygıtları yenile	Оновити пристрої
+Devices refreshed	Устройства обновлены	Geräte aktualisiert	Appareils actualisés	Dispositivos actualizados	Dispositivos atualizados	Dispositivi aggiornati	Urządzenia odświeżone	Aygıtlar yenilendi	Пристрої оновлено
+Restore microphone	Восстановить микрофон	Mikrofon wiederherstellen	Restaurer le microphone	Restaurar micrófono	Restaurar microfone	Ripristina microfono	Przywróć mikrofon	Mikrofonu geri yükle	Відновити мікрофон
+Microphone restored	Микрофон восстановлен	Mikrofon wiederhergestellt	Microphone restauré	Micrófono restaurado	Microfone restaurado	Microfono ripristinato	Mikrofon przywrócony	Mikrofon geri yüklendi	Мікрофон відновлено
+No recovery needed	Восстановление не требуется	Keine Wiederherstellung nötig	Aucune restauration nécessaire	No se necesita restauración	Restauração desnecessária	Ripristino non necessario	Przywracanie niepotrzebne	Geri yükleme gerekmiyor	Відновлення не потрібне
+Connection help	Помощь с подключением	Verbindungshilfe	Aide à la connexion	Ayuda de conexión	Ajuda de conexão	Guida alla connessione	Pomoc z połączeniem	Bağlantı yardımı	Допомога з підключенням
+Select CABLE Output in your game or browser. Restart microphone capture after switching.	Выбери CABLE Output в игре или браузере. После переключения перезапусти захват микрофона.	CABLE Output im Spiel oder Browser wählen. Danach die Mikrofonaufnahme neu starten.	Choisissez CABLE Output dans le jeu ou navigateur, puis redémarrez la capture du micro.	Selecciona CABLE Output en el juego o navegador y reinicia la captura del micrófono.	Selecione CABLE Output no jogo ou navegador e reinicie a captura do microfone.	Seleziona CABLE Output nel gioco o browser e riavvia la cattura del microfono.	Wybierz CABLE Output w grze lub przeglądarce i uruchom ponownie przechwytywanie mikrofonu.	Oyun veya tarayıcıda CABLE Output'u seçip mikrofon yakalamayı yeniden başlatın.	Вибери CABLE Output у грі чи браузері й перезапусти захоплення мікрофона.
+Your previous Windows microphone is restored when processing stops.	При остановке вернётся прежний микрофон Windows.	Beim Stoppen wird das vorherige Windows-Mikrofon wiederhergestellt.	L'ancien micro Windows est restauré à l'arrêt du traitement.	El micrófono anterior de Windows se restaura al detener el procesamiento.	O microfone anterior do Windows é restaurado ao parar o processamento.	Il microfono Windows precedente viene ripristinato all'arresto.	Poprzedni mikrofon Windows zostanie przywrócony po zatrzymaniu.	İşleme durunca önceki Windows mikrofonunuz geri yüklenir.	Після зупинки повернеться попередній мікрофон Windows.
+Driver installation requires administrator permission and may require a restart.	Для драйвера нужны права администратора; может потребоваться перезагрузка.	Die Treiberinstallation erfordert Administratorrechte und eventuell einen Neustart.	Le pilote nécessite les droits administrateur et parfois un redémarrage.	El controlador requiere permisos de administrador y puede necesitar un reinicio.	O driver requer permissão de administrador e pode exigir reinicialização.	Il driver richiede permessi di amministratore e potrebbe richiedere un riavvio.	Sterownik wymaga uprawnień administratora i może wymagać restartu.	Sürücü kurulumu yönetici izni ve yeniden başlatma gerektirebilir.	Для драйвера потрібні права адміністратора; можливе перезавантаження.
+Audio devices	Аудиоустройства	Audiogeräte	Périphériques audio	Dispositivos de audio	Dispositivos de áudio	Dispositivi audio	Urządzenia audio	Ses aygıtları	Аудіопристрої
+Input microphone	Микрофон · вход	Eingangsmikrofon	Microphone d'entrée	Micrófono de entrada	Microfone de entrada	Microfono di ingresso	Mikrofon wejściowy	Giriş mikrofonu	Мікрофон · вхід
+Processed output	Обработанный выход	Verarbeiteter Ausgang	Sortie traitée	Salida procesada	Saída processada	Uscita elaborata	Przetworzone wyjście	İşlenmiş çıkış	Оброблений вихід
+Monitor headphones	Наушники · прослушивание	Kopfhörer zum Mithören	Casque d'écoute	Auriculares de escucha	Fones de monitoramento	Cuffie di ascolto	Słuchawki odsłuchowe	Dinleme kulaklığı	Навушники · прослуховування
+Audio buffer	Аудиобуфер	Audiopuffer	Tampon audio	Búfer de audio	Buffer de áudio	Buffer audio	Bufor audio	Ses arabelleği	Аудіобуфер
+Increase the buffer if audio crackles. Pitch adds up to 43 ms of algorithmic delay.	При треске увеличь буфер. Pitch добавляет до 43 мс задержки.	Bei Knacken den Puffer erhöhen. Pitch fügt bis zu 43 ms Verzögerung hinzu.	Augmentez le tampon si le son craque. Pitch ajoute jusqu'à 43 ms de latence.	Aumenta el búfer si el audio cruje. Pitch añade hasta 43 ms de latencia.	Aumente o buffer se o áudio estalar. Pitch adiciona até 43 ms de latência.	Aumenta il buffer se l'audio crepita. Pitch aggiunge fino a 43 ms di latenza.	Zwiększ bufor przy trzaskach. Pitch dodaje do 43 ms opóźnienia.	Ses çatırdıyorsa arabelleği artırın. Pitch en fazla 43 ms gecikme ekler.	При тріску збільш буфер. Pitch додає до 43 мс затримки.
+Apply and restart	Применить и перезапустить	Anwenden und neu starten	Appliquer et redémarrer	Aplicar y reiniciar	Aplicar e reiniciar	Applica e riavvia	Zastosuj i uruchom ponownie	Uygula ve yeniden başlat	Застосувати й перезапустити
+Preferences	Поведение	Verhalten	Préférences	Preferencias	Preferências	Preferenze	Preferencje	Tercihler	Поведінка
+Global hotkeys	Глобальные клавиши	Globale Tastenkürzel	Raccourcis globaux	Atajos globales	Atalhos globais	Scorciatoie globali	Skróty globalne	Genel kısayollar	Глобальні клавіші
+Compact voice cards	Компактные карточки	Kompakte Stimmkarten	Cartes de voix compactes	Tarjetas de voz compactas	Cartões de voz compactos	Schede voce compatte	Kompaktowe karty głosów	Kompakt ses kartları	Компактні картки
+Open app folder	Папка приложения	App-Ordner öffnen	Dossier de l'application	Carpeta de la aplicación	Pasta do aplicativo	Cartella dell'app	Folder aplikacji	Uygulama klasörü	Папка застосунку
+Save settings	Сохранить настройки	Einstellungen speichern	Enregistrer les réglages	Guardar ajustes	Salvar configurações	Salva impostazioni	Zapisz ustawienia	Ayarları kaydet	Зберегти налаштування
+Settings saved	Настройки сохранены	Einstellungen gespeichert	Réglages enregistrés	Ajustes guardados	Configurações salvas	Impostazioni salvate	Ustawienia zapisane	Ayarlar kaydedildi	Налаштування збережено
+Diagnostics	Диагностика	Diagnose	Diagnostic	Diagnóstico	Diagnóstico	Diagnostica	Diagnostyka	Tanılama	Діагностика
+Underruns	Сбои очереди	Pufferunterläufe	Sous-alimentations	Faltas de búfer	Falhas de buffer	Svuotamenti buffer	Niedobory bufora	Arabellek kesintileri	Збої черги
+Recording drops	Пропуски записи	Aufnahmeaussetzer	Pertes d'enregistrement	Bloques perdidos	Perdas de gravação	Perdite registrazione	Utracone bloki	Kayıt kayıpları	Пропуски запису
+Connect virtual microphone	Подключить виртуальный микрофон	Virtuelles Mikrofon verbinden	Connecter un micro virtuel	Conectar micrófono virtual	Conectar microfone virtual	Collega microfono virtuale	Podłącz wirtualny mikrofon	Sanal mikrofonu bağla	Підключити віртуальний мікрофон
+No device	Нет устройства	Kein Gerät	Aucun appareil	Sin dispositivo	Sem dispositivo	Nessun dispositivo	Brak urządzenia	Aygıt yok	Немає пристрою
+Connect a physical microphone	Подключи физический микрофон	Physisches Mikrofon anschließen	Branchez un microphone physique	Conecta un micrófono físico	Conecte um microfone físico	Collega un microfono fisico	Podłącz fizyczny mikrofon	Fiziksel mikrofon bağlayın	Підключи фізичний мікрофон
+Recording started	Запись началась	Aufnahme gestartet	Enregistrement démarré	Grabación iniciada	Gravação iniciada	Registrazione avviata	Nagrywanie rozpoczęte	Kayıt başladı	Запис розпочато
+Start voice processing first	Сначала включи голос	Zuerst die Stimme starten	Activez d'abord la voix	Activa primero la voz	Ative a voz primeiro	Attiva prima la voce	Najpierw włącz głos	Önce ses işlemeyi başlatın	Спочатку увімкни голос
+Sound queue is busy	Очередь звуков занята	Sound-Warteschlange belegt	File de sons occupée	Cola de sonidos ocupada	Fila de sons ocupada	Coda audio occupata	Kolejka dźwięków zajęta	Ses kuyruğu meşgul	Черга звуків зайнята
+Playing clip	Клип воспроизводится	Clip wird abgespielt	Lecture du clip	Reproduciendo clip	Reproduzindo clipe	Riproduzione clip	Odtwarzanie klipu	Klip oynatılıyor	Кліп відтворюється
+Microphone restored after a crash	Микрофон восстановлен после сбоя	Mikrofon nach Absturz wiederhergestellt	Microphone restauré après un arrêt inattendu	Micrófono restaurado tras un fallo	Microfone restaurado após uma falha	Microfono ripristinato dopo un arresto	Mikrofon przywrócony po awarii	Çökme sonrası mikrofon geri yüklendi	Мікрофон відновлено після збою
+Press Install Driver, then refresh devices.	Нажми Install Driver, затем обнови устройства.	Install Driver drücken, dann Geräte aktualisieren.	Cliquez sur Install Driver puis actualisez les appareils.	Pulsa Install Driver y actualiza los dispositivos.	Clique em Install Driver e atualize os dispositivos.	Premi Install Driver e aggiorna i dispositivi.	Kliknij Install Driver i odśwież urządzenia.	Install Driver'a basıp aygıtları yenileyin.	Натисни Install Driver, потім онови пристрої.
+VB-CABLE installer missing. Extract the full package or download it from vb-cable.com.	Установщик VB-CABLE не найден. Распакуй полный комплект или скачай его с vb-cable.com.	VB-CABLE-Installer fehlt. Vollständiges Paket entpacken oder von vb-cable.com laden.	Installateur VB-CABLE introuvable. Extrayez le paquet complet ou téléchargez-le sur vb-cable.com.	Falta el instalador de VB-CABLE. Extrae el paquete completo o descárgalo de vb-cable.com.	Instalador VB-CABLE ausente. Extraia o pacote completo ou baixe de vb-cable.com.	Installer VB-CABLE mancante. Estrai il pacchetto completo o scaricalo da vb-cable.com.	Brak instalatora VB-CABLE. Rozpakuj pełny pakiet lub pobierz z vb-cable.com.	VB-CABLE yükleyicisi yok. Tam paketi çıkarın veya vb-cable.com'dan indirin.	Установщик VB-CABLE не знайдено. Розпакуй повний комплект або завантаж із vb-cable.com.
+Audio device disconnected. Microphone restored; reconnect and start processing again.	Аудиоустройство отключилось. Микрофон восстановлен; подключи устройство и включи голос снова.	Audiogerät getrennt. Mikrofon wiederhergestellt; Gerät verbinden und erneut starten.	Appareil déconnecté. Microphone restauré ; reconnectez-le et relancez le traitement.	Dispositivo desconectado. Micrófono restaurado; reconéctalo y vuelve a iniciar.	Dispositivo desconectado. Microfone restaurado; reconecte e inicie novamente.	Dispositivo disconnesso. Microfono ripristinato; ricollegalo e riavvia.	Urządzenie odłączone. Mikrofon przywrócony; podłącz i uruchom ponownie.	Ses aygıtı bağlantısı kesildi. Mikrofon geri yüklendi; bağlayıp yeniden başlatın.	Аудіопристрій відключився. Мікрофон відновлено; підключи пристрій і ввімкни голос знову.
+Clean and balanced.	Чистый и собранный.	Klar und ausgewogen.	Clair et équilibré.	Limpio y equilibrado.	Limpo e equilibrado.	Pulito ed equilibrato.	Czysty i zrównoważony.	Temiz ve dengeli.	Чистий і збалансований.
+Low, warm and smooth.	Низкий, тёплый, бархатный.	Tief, warm und weich.	Grave, chaud et doux.	Grave, cálido y suave.	Grave, quente e suave.	Basso, caldo e morbido.	Niski, ciepły i gładki.	Kalın, sıcak ve yumuşak.	Низький, теплий, оксамитовий.
+Deep and powerful.	Глубокий и мощный.	Tief und kraftvoll.	Profond et puissant.	Profundo y potente.	Profundo e potente.	Profondo e potente.	Głęboki i potężny.	Derin ve güçlü.	Глибокий і потужний.
+Higher, lighter, brighter.	Выше, легче, ярче.	Höher, leichter, heller.	Plus haut, léger et brillant.	Más alto, ligero y brillante.	Mais agudo, leve e brilhante.	Più alto, leggero e brillante.	Wyższy, lżejszy, jaśniejszy.	Daha ince, hafif ve parlak.	Вище, легше, яскравіше.
+Small voice, big energy.	Маленький голос, большая энергия.	Kleine Stimme, große Energie.	Petite voix, grande énergie.	Voz pequeña, gran energía.	Voz pequena, muita energia.	Voce piccola, grande energia.	Mały głos, wielka energia.	Küçük ses, büyük enerji.	Маленький голос, велика енергія.
+Full broadcast tone.	Плотный голос для эфира.	Satter Radioklang.	Timbre radio ample.	Tono de radio pleno.	Tom de rádio encorpado.	Timbro radio pieno.	Pełna barwa radiowa.	Dolgun yayın tonu.	Насичений голос для ефіру.
+A voice from the future.	Голос из будущего.	Eine Stimme aus der Zukunft.	Une voix du futur.	Una voz del futuro.	Uma voz do futuro.	Una voce dal futuro.	Głos z przyszłości.	Gelecekten bir ses.	Голос із майбутнього.
+Metallic ring modulation.	Металлическая модуляция.	Metallische Ringmodulation.	Modulation métallique.	Modulación metálica.	Modulação metálica.	Modulazione metallica.	Metaliczna modulacja.	Metalik modülasyon.	Металева модуляція.
+Grit and saturation.	Грубость и насыщение.	Rauheit und Sättigung.	Grain et saturation.	Aspereza y saturación.	Aspereza e saturação.	Ruvidità e saturazione.	Szorstkość i nasycenie.	Pürüz ve doygunluk.	Грубість і насичення.
+Vintage game console.	Старая игровая консоль.	Klassische Spielkonsole.	Console de jeu rétro.	Consola de juegos retro.	Console de jogos retrô.	Console da gioco retrò.	Stara konsola do gier.	Eski oyun konsolu.	Стара ігрова консоль.
+An otherworldly tremble.	Неземная дрожь.	Überirdisches Zittern.	Un tremblement surnaturel.	Un temblor de otro mundo.	Um tremor de outro mundo.	Un tremore ultraterreno.	Nieziemskie drżenie.	Dünya dışı bir titreşim.	Неземне тремтіння.
+Distorted neon character.	Искажённый неоновый характер.	Verzerrter Neoncharakter.	Caractère néon déformé.	Carácter neón distorsionado.	Caráter neon distorcido.	Carattere neon distorto.	Zniekształcony neonowy charakter.	Bozulmuş neon karakter.	Спотворений неоновий характер.
+A haunting, trailing voice.	Призрачный голос со шлейфом.	Geisterstimme mit Nachklang.	Une voix fantomatique persistante.	Una voz fantasmal persistente.	Uma voz fantasmagórica persistente.	Una voce spettrale persistente.	Upiorny głos z ogonem.	İz bırakan hayalet ses.	Примарний голос зі шлейфом.
+Stone cathedral ambience.	Атмосфера каменного собора.	Atmosphäre einer Steinkathedrale.	Ambiance de cathédrale en pierre.	Ambiente de catedral de piedra.	Ambiente de catedral de pedra.	Atmosfera di cattedrale in pietra.	Atmosfera kamiennej katedry.	Taş katedral atmosferi.	Атмосфера кам'яного собору.
+Echoes from orbit.	Эхо с орбиты.	Echos aus dem Orbit.	Échos de l'orbite.	Ecos desde la órbita.	Ecos da órbita.	Echi dall'orbita.	Echa z orbity.	Yörüngeden yankılar.	Відлуння з орбіти.
+Muted and drifting.	Приглушённый и плывущий.	Gedämpft und schwebend.	Étouffé et flottant.	Apagado y flotante.	Abafado e flutuante.	Attutito e fluttuante.	Stłumiony i płynący.	Boğuk ve süzülen.	Приглушений і плинний.
+Deep voice, dark tail.	Глубокий голос, тёмный шлейф.	Tiefe Stimme, dunkler Nachhall.	Voix grave, traîne sombre.	Voz grave, estela oscura.	Voz grave, cauda sombria.	Voce profonda, coda scura.	Głęboki głos, mroczny ogon.	Derin ses, karanlık iz.	Глибокий голос, темний шлейф.
+Airy tone, soft echoes.	Воздушный тембр, мягкое эхо.	Luftiger Klang, sanfte Echos.	Timbre aérien, échos doux.	Tono etéreo, ecos suaves.	Tom aéreo, ecos suaves.	Timbro arioso, echi morbidi.	Zwiewna barwa, delikatne echa.	Havadar tını, yumuşak yankılar.	Повітряний тембр, м'яка луна.
+Vintage telephone band.	Диапазон старого телефона.	Klang eines alten Telefons.	Bande d'un ancien téléphone.	Banda de teléfono antiguo.	Faixa de telefone antigo.	Banda telefonica d'epoca.	Pasmo starego telefonu.	Eski telefon frekansları.	Діапазон старого телефону.
+Overdriven portable radio.	Перегруженное портативное радио.	Übersteuertes Kofferradio.	Radio portable saturée.	Radio portátil saturada.	Rádio portátil saturado.	Radio portatile saturata.	Przesterowane radio przenośne.	Aşırı sürülmüş taşınabilir radyo.	Перевантажене портативне радіо.
+Sharp megaphone tone.	Резкий тембр мегафона.	Scharfer Megafonklang.	Timbre de mégaphone incisif.	Tono de megáfono agudo.	Tom de megafone cortante.	Timbro di megafono tagliente.	Ostra barwa megafonu.	Keskin megafon tonu.	Різкий тембр мегафона.
+Warm cassette flutter.	Тёплая кассетная детонация.	Warme Kassettenschwankungen.	Flottement de cassette chaleureux.	Fluctuación cálida de casete.	Flutuação quente de cassete.	Fluttuazione calda di cassetta.	Ciepłe drżenie kasety.	Sıcak kaset dalgalanması.	Тепла касетна детонація.
+Digital arcade texture.	Цифровая аркадная текстура.	Digitale Arcade-Textur.	Texture d'arcade numérique.	Textura de arcade digital.	Textura de arcade digital.	Texture arcade digitale.	Cyfrowa tekstura arcade.	Dijital arcade dokusu.	Цифрова аркадна текстура.
+A low voice from classic cinema.	Низкий тембр старого кино.	Tiefe Stimme aus Filmklassikern.	Voix grave du cinéma classique.	Voz grave del cine clásico.	Voz grave do cinema clássico.	Voce bassa del cinema classico.	Niski głos starego kina.	Klasik sinemadan kalın bir ses.	Низький тембр старого кіно.

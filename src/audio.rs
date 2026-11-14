@@ -130,7 +130,7 @@ fn device(name: &str, input: bool) -> Result<cpal::Device, String> {
     .map_err(|e| e.to_string())?;
     ds.into_iter()
         .find(|d| d.name().is_ok_and(|n| n == name))
-        .ok_or_else(|| format!("Устройство недоступно: {name}. Обнови список устройств."))
+        .ok_or_else(|| format!("Device unavailable: {name}. Refresh the device list."))
 }
 
 enum RecMsg {
@@ -173,7 +173,7 @@ impl Engine {
         let id = device(input, true)?;
         let ic = id
             .default_input_config()
-            .map_err(|e| format!("Микрофон: {e}"))?;
+            .map_err(|e| format!("Microphone: {e}"))?;
         let rate = ic.sample_rate().0;
         let config: cpal::StreamConfig = ic.clone().into();
         let q = Arc::new(Queue::new());
@@ -227,7 +227,7 @@ impl Engine {
         let err_s = shared.clone();
         let err = move |e| {
             err_s.stream_failed.store(true, Ordering::Release);
-            err_s.message(format!("Аудиопоток: {e}. Останови и запусти обработку."));
+            err_s.message(format!("Audio stream: {e}. Stop and restart processing."));
         };
         let stream = match ic.sample_format() {
             cpal::SampleFormat::F32 => id.build_input_stream(
@@ -248,9 +248,9 @@ impl Engine {
                 err,
                 None,
             ),
-            f => return Err(format!("Формат микрофона {f:?} пока не поддерживается")),
+            f => return Err(format!("Unsupported microphone format: {f:?}")),
         }
-        .map_err(|e| format!("Не удалось открыть микрофон: {e}"))?;
+        .map_err(|e| format!("Could not open microphone: {e}"))?;
         stream.play().map_err(|e| e.to_string())?;
         for o in &outputs {
             o.play().map_err(|e| e.to_string())?;
@@ -277,7 +277,7 @@ impl Engine {
             .send(RecMsg::Start(path, self.rate, ack))
             .map_err(|e| e.to_string())?;
         rx.recv_timeout(std::time::Duration::from_secs(2))
-            .map_err(|e| format!("Запись не готова: {e}"))??;
+            .map_err(|e| format!("Recording not ready: {e}"))??;
         self.shared.recording.store(true, Ordering::Release);
         Ok(())
     }
@@ -474,7 +474,7 @@ fn build_output(
     };
     let err = move |e| {
         shared.stream_failed.store(true, Ordering::Release);
-        shared.message(format!("Выходное устройство: {e}"));
+        shared.message(format!("Output device: {e}"));
     };
     match supported.sample_format() {
         cpal::SampleFormat::F32 => d.build_output_stream(
@@ -510,9 +510,9 @@ fn build_output(
             err,
             None,
         ),
-        f => return Err(format!("Формат выхода {f:?} пока не поддерживается")),
+        f => return Err(format!("Unsupported output format: {f:?}")),
     }
-    .map_err(|e| format!("Выход «{name}»: {e}"))
+    .map_err(|e| format!("Output \"{name}\": {e}"))
 }
 fn record_worker(rx: Receiver<RecMsg>, s: Arc<Shared>) {
     let mut wav: Option<hound::WavWriter<std::io::BufWriter<std::fs::File>>> = None;
@@ -540,7 +540,7 @@ fn record_worker(rx: Receiver<RecMsg>, s: Arc<Shared>) {
                     Err(e) => {
                         s.recording.store(false, Ordering::Relaxed);
                         let _ = ack.send(Err(e.to_string()));
-                        s.message(format!("Запись: {e}"));
+                        s.message(format!("Recording: {e}"));
                     }
                 }
             }
@@ -555,7 +555,7 @@ fn record_worker(rx: Receiver<RecMsg>, s: Arc<Shared>) {
                     }
                     if let Some(e) = err {
                         s.recording.store(false, Ordering::Relaxed);
-                        s.message(format!("Ошибка записи: {e}"));
+                        s.message(format!("Recording error: {e}"));
                         if let Some(w) = wav.take() {
                             let _ = w.finalize();
                         }
@@ -565,8 +565,8 @@ fn record_worker(rx: Receiver<RecMsg>, s: Arc<Shared>) {
             RecMsg::Stop => {
                 if let Some(w) = wav.take() {
                     match w.finalize() {
-                        Ok(()) => s.message(format!("Запись сохранена: {}", current.display())),
-                        Err(e) => s.message(format!("Ошибка сохранения WAV: {e}")),
+                        Ok(()) => s.message(format!("Recording saved: {}", current.display())),
+                        Err(e) => s.message(format!("Could not save WAV: {e}")),
                     }
                 }
             }
@@ -581,10 +581,10 @@ pub fn load_wav(path: &Path, rate: u32) -> Result<Arc<Vec<f32>>, String> {
     let mut reader = hound::WavReader::open(path).map_err(|e| format!("WAV: {e}"))?;
     let spec = reader.spec();
     if spec.channels == 0 || spec.sample_rate == 0 {
-        return Err("Некорректный WAV".into());
+        return Err("Invalid WAV file".into());
     }
     if reader.duration() > spec.sample_rate * 60 {
-        return Err("Максимальная длина клипа — 60 секунд".into());
+        return Err("Clips must be 60 seconds or shorter".into());
     }
     let samples: Vec<f32> = match spec.sample_format {
         hound::SampleFormat::Float => reader
@@ -605,7 +605,7 @@ pub fn load_wav(path: &Path, rate: u32) -> Result<Arc<Vec<f32>>, String> {
         .map(|v| v.iter().sum::<f32>() / v.len() as f32)
         .collect();
     if mono.is_empty() {
-        return Err("WAV-файл пуст".into());
+        return Err("WAV file is empty".into());
     }
     let len = (mono.len() as f64 * rate as f64 / spec.sample_rate as f64) as usize;
     let out = (0..len)

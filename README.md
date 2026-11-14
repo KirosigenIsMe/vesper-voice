@@ -32,7 +32,9 @@ The interface and audio engine are written in **Rust**: a native window, local p
 
 **Prefer a portable version?** Extract `Vesper-…-Portable-x64.zip` and run `Vesper.exe`. Rust and development tools are not required to run the app. Sending processed audio to other applications requires VB-CABLE; its original installer is included in `VirtualCable`.
 
-**Interface language:** the current 1.2.0 application UI is in Russian, as shown above. This repository's main documentation and release notes are in English.
+**10 interface languages:** English (default), Russian, German, French, Spanish, Portuguese, Italian, Polish, Turkish and Ukrainian. Switch instantly using the language menu in the sidebar or Settings; your choice is saved. Preset names remain stable across languages. Technical audio/Windows errors may appear in English or the operating system's language.
+
+**New in 1.3.0:** a cleaner studio with compact voice cards, fewer repeated labels, simpler transport controls and connection help that stays out of the way until you need it. Existing audio settings, favorites and custom presets carry over.
 
 > VB-CABLE is a separate donationware driver by **VB-Audio Software**. Author: [vb-cable.com](https://www.vb-cable.com/). [Support the author and review licensing terms](https://vb-audio.com/Services/licensing.htm). Its files are distributed unchanged. VESPER being free does not override VB-Audio's terms, including those for professional use.
 
@@ -77,7 +79,7 @@ We have not run comparative RAM, CPU, latency or audio quality benchmarks agains
 | Reduction in pure DSP processing time versus 1.1.0 | **28.43%** |
 | Output samples checked before/after optimization | **3,456,000, bit-for-bit identical** |
 
-These measurements come from a previous build of the same audio engine. They are not maximum resource guarantees or comparisons with Voicemod. Version 1.2.0 adds installation and release infrastructure; see release assets for exact current file sizes. Memory and CPU usage depend on the operating mode, window state, drivers and recording. Methodology and supporting figures are in [benchmarks.json](docs/benchmarks.json).
+These measurements come from a previous build of the same DSP engine. They are not maximum resource guarantees or comparisons with Voicemod. The current release also includes installation, release and localization infrastructure; see release assets for exact current file sizes. Memory and CPU usage depend on the operating mode, window state, drivers and recording. Methodology and supporting figures are in [benchmarks.json](docs/benchmarks.json).
 
 Effect coefficients are recalculated when settings change, with constant calculations moved out of sample processing. Waveform data is published up to 30 times per second. When idle or minimized, the UI refreshes once per second, and hotkeys wake it separately. Audio processing remains continuous.
 
@@ -114,7 +116,7 @@ Output: `dist/bin/Vesper.exe`. Build scripts contain no paths specific to the au
 
 The first run downloads the original VB-CABLE package and packaging tools into `.tools`, using pinned SHA-256 hashes. These downloads are excluded from Git. Official installer package signatures are verified. The Inno Setup compiler is extracted locally without a global installation.
 
-Release output is written to `dist/release/1.2.0`. Before repackaging, archive the previous `dist/stage/1.2.0` directory: the script stops rather than mixing old and new files.
+Release output is written to `dist/release/1.3.0`. Before repackaging, archive the previous `dist/stage/1.3.0` directory: the script stops rather than mixing old and new files.
 
 <details>
 <summary><strong>Verification and release workflow</strong></summary>
@@ -122,7 +124,7 @@ Release output is written to `dist/release/1.2.0`. Before repackaging, archive t
 - `cargo test --locked` checks DSP, the queue, WAV recording and routing recovery.
 - `Vesper.exe --self-test --output-dir=diagnostics` renders and verifies all 24 voices.
 - `cargo run --release --locked --example dsp_benchmark -- benchmark-results` runs a repeatable DSP benchmark.
-- GitHub Actions verifies builds on push / pull request. A `v1.2.0` tag matching Cargo.toml builds Setup, portable, source and SHA-256 files, tests application installation without changing audio drivers, and creates a **draft release**.
+- GitHub Actions verifies builds on push / pull request. A `v1.3.0` tag matching Cargo.toml builds Setup, portable, source and SHA-256 files, tests application installation without changing audio drivers, and creates a **draft release**.
 - Secrets, tokens, recordings, user settings, `.tools`, `target` and `dist` are excluded from the source package.
 - To release a new version, update Cargo.toml and `assets/app.rc`, then create and push the matching tag. The repository owner publishes the draft after verification.
 

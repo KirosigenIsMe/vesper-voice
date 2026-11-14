@@ -114,8 +114,11 @@ pub fn cable() -> Result<Cable> {
     let playback = endpoints(eRender)?
         .into_iter()
         .find(|e| is_named(&e.name, "cable input"))
-        .ok_or("Не найден CABLE Input. Установи VB-CABLE, затем обнови устройства.")?;
-    let capture=endpoints(eCapture)?.into_iter().find(|e|is_named(&e.name,"cable output")).ok_or("Не найден CABLE Output. Заверши установку VB-CABLE; может понадобиться перезагрузка Windows.")?;
+        .ok_or("CABLE Input not found. Install VB-CABLE, then refresh devices.")?;
+    let capture = endpoints(eCapture)?
+        .into_iter()
+        .find(|e| is_named(&e.name, "cable output"))
+        .ok_or("CABLE Output not found. Finish installing VB-CABLE; Windows may need a restart.")?;
     Ok(Cable { playback, capture })
 }
 pub fn physical_inputs() -> Result<Vec<Endpoint>> {
@@ -204,15 +207,15 @@ fn apply<B: Defaults>(b: &B, s: &Snapshot) -> Result<()> {
             if let Err(e) = b.set(role, &s.target) {
                 let rollback = restore(b, s);
                 return Err(format!(
-                    "Не удалось назначить микрофон Vesper: {e}. Откат: {}",
-                    rollback.err().unwrap_or_else(|| "выполнен".into())
+                    "Could not set the Vesper microphone: {e}. Rollback: {}",
+                    rollback.err().unwrap_or_else(|| "completed".into())
                 ));
             }
         }
     }
     for role in 0..3 {
         if b.current(role)?.as_deref() != Some(&s.target) {
-            return Err("Windows не подтвердила переключение микрофона".into());
+            return Err("Windows did not confirm the microphone switch".into());
         }
     }
     Ok(())
@@ -227,7 +230,7 @@ impl Instance {
             unsafe {
                 let _ = CloseHandle(h);
             }
-            return Err("Vesper уже запущен. Открой существующее окно.".into());
+            return Err("Vesper is already running. Open the existing window.".into());
         }
         Ok(Self(h))
     }
@@ -248,7 +251,7 @@ impl JournalLock {
             unsafe {
                 let _ = CloseHandle(h);
             }
-            return Err("Журнал маршрутизации занят".into());
+            return Err("Routing journal is busy".into());
         }
         Ok(Self(h))
     }
@@ -268,7 +271,7 @@ fn read(path: &Path) -> Result<Option<Snapshot>> {
     match std::fs::read(path) {
         Ok(bytes) => serde_json::from_slice(&bytes)
             .map(Some)
-            .map_err(|e| format!("Журнал маршрутизации: {e}")),
+            .map_err(|e| format!("Routing journal: {e}")),
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => Ok(None),
         Err(e) => Err(e.to_string()),
     }
@@ -314,7 +317,7 @@ pub fn recover(data: &Path) -> Result<bool> {
     };
     if let Some(s) = old {
         if s.pid != std::process::id() && parent_alive(s.pid) {
-            return Err("Системным микрофоном управляет другой запущенный Vesper".into());
+            return Err("Another Vesper instance controls the system microphone".into());
         }
         finish(&path, &s)?;
         return Ok(true);
@@ -332,7 +335,7 @@ impl Guard {
         let _lock = JournalLock::new()?;
         let path = journal(data);
         if read(&path)?.is_some() {
-            return Err("Сначала восстанови предыдущую маршрутизацию Windows".into());
+            return Err("Restore the previous Windows routing first".into());
         }
         let b = WindowsDefaults::new()?;
         let mut previous = [b.current(0)?, b.current(1)?, b.current(2)?];
@@ -373,9 +376,7 @@ impl Guard {
         command.creation_flags(0x08000000);
         if let Err(e) = command.spawn() {
             let _ = std::fs::remove_file(&path);
-            return Err(format!(
-                "Не удалось запустить восстановление микрофона: {e}"
-            ));
+            return Err(format!("Could not start microphone recovery: {e}"));
         }
         if let Err(e) = apply(&b, &state) {
             let rollback = restore(&b, &state);
@@ -450,7 +451,7 @@ pub fn diagnose(path: &Path) -> Result<()> {
     }
     let after = [b.current(0)?, b.current(1)?, b.current(2)?];
     if before != after {
-        return Err("Диагностика изменила микрофон по умолчанию".into());
+        return Err("Diagnostics changed the default microphone".into());
     }
     let inputs = endpoints(eCapture)?;
     let outputs = endpoints(eRender)?;
@@ -463,12 +464,12 @@ pub fn diagnose(path: &Path) -> Result<()> {
         std::fs::create_dir_all(&temp).map_err(|e| e.to_string())?;
         let mut guard = Guard::start(&temp, &input.id, &input.name)?;
         if !journal(&temp).exists() {
-            return Err("Журнал переключения не создан".into());
+            return Err("Routing journal was not created".into());
         }
         guard.ensure()?;
         guard.stop()?;
         if journal(&temp).exists() {
-            return Err("Журнал не удалён после восстановления".into());
+            return Err("Journal was not removed after recovery".into());
         }
         let stale = Snapshot {
             token: "diagnostic-stale".into(),
@@ -478,14 +479,14 @@ pub fn diagnose(path: &Path) -> Result<()> {
         };
         write(&journal(&temp), &stale)?;
         if !recover(&temp)? || journal(&temp).exists() {
-            return Err("Восстановление незавершённого переключения не выполнено".into());
+            return Err("Incomplete routing was not recovered".into());
         }
         let _ = std::fs::remove_dir(&temp);
         lifecycle = "PASS: guard start, watchdog spawn, ensure, stop, stale journal recovery";
     }
     let final_roles = [b.current(0)?, b.current(1)?, b.current(2)?];
     if final_roles != before {
-        return Err("Роли микрофона не восстановлены после диагностики".into());
+        return Err("Microphone roles were not restored after diagnostics".into());
     }
     let report = serde_json::json!({"result":"PASS","lifecycle":lifecycle,"default_capture_roles":before,"inputs":inputs,"outputs":outputs,"vb_cable":cable().is_ok()});
     std::fs::write(path, serde_json::to_vec_pretty(&report).unwrap()).map_err(|e| e.to_string())
