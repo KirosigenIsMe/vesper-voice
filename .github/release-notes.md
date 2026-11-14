@@ -1,11 +1,12 @@
 A native voice studio written in Rust. Free forever: no PRO tier, accounts or subscriptions.
 
-### New in 1.3.0
+### New in 1.3.1
 
 - **10 interface languages:** English (default), Russian, German, French, Spanish, Portuguese, Italian, Polish, Turkish and Ukrainian. Change language instantly in the sidebar or Settings; the choice is remembered.
 - **A cleaner studio:** compact voice cards, a simpler transport bar, fewer repeated status labels and no decorative processing-chain buttons. Connection help and diagnostics are available on demand in Settings.
 - **Presets made simpler:** save custom voices, import by file selection or drag-and-drop, and export to a location you choose. Cancelling the file picker leaves the preset unchanged.
 - **Upgrade compatibility:** existing audio parameters, favorites and custom presets are preserved. Voice names stay the same across languages.
+- **Settings loading is independent of audio hardware:** devices are resolved once when opening the studio, rather than during each settings deserialization.
 - **Localized setup:** the installer supports the same ten languages, with English as its fallback. The license and introductory notice may remain in English.
 
 ### Downloads

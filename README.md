@@ -34,7 +34,7 @@ The interface and audio engine are written in **Rust**: a native window, local p
 
 **10 interface languages:** English (default), Russian, German, French, Spanish, Portuguese, Italian, Polish, Turkish and Ukrainian. Switch instantly using the language menu in the sidebar or Settings; your choice is saved. Preset names remain stable across languages. Technical audio/Windows errors may appear in English or the operating system's language.
 
-**New in 1.3.0:** a cleaner studio with compact voice cards, fewer repeated labels, simpler transport controls and connection help that stays out of the way until you need it. Existing audio settings, favorites and custom presets carry over.
+**New in 1.3.1:** a cleaner studio with compact voice cards, fewer repeated labels, simpler transport controls and connection help that stays out of the way until you need it. Existing audio settings, favorites and custom presets carry over.
 
 > VB-CABLE is a separate donationware driver by **VB-Audio Software**. Author: [vb-cable.com](https://www.vb-cable.com/). [Support the author and review licensing terms](https://vb-audio.com/Services/licensing.htm). Its files are distributed unchanged. VESPER being free does not override VB-Audio's terms, including those for professional use.
 
@@ -116,7 +116,7 @@ Output: `dist/bin/Vesper.exe`. Build scripts contain no paths specific to the au
 
 The first run downloads the original VB-CABLE package and packaging tools into `.tools`, using pinned SHA-256 hashes. These downloads are excluded from Git. Official installer package signatures are verified. The Inno Setup compiler is extracted locally without a global installation.
 
-Release output is written to `dist/release/1.3.0`. Before repackaging, archive the previous `dist/stage/1.3.0` directory: the script stops rather than mixing old and new files.
+Release output is written to `dist/release/1.3.1`. Before repackaging, archive the previous `dist/stage/1.3.1` directory: the script stops rather than mixing old and new files.
 
 <details>
 <summary><strong>Verification and release workflow</strong></summary>
@@ -124,7 +124,7 @@ Release output is written to `dist/release/1.3.0`. Before repackaging, archive t
 - `cargo test --locked` checks DSP, the queue, WAV recording and routing recovery.
 - `Vesper.exe --self-test --output-dir=diagnostics` renders and verifies all 24 voices.
 - `cargo run --release --locked --example dsp_benchmark -- benchmark-results` runs a repeatable DSP benchmark.
-- GitHub Actions verifies builds on push / pull request. A `v1.3.0` tag matching Cargo.toml builds Setup, portable, source and SHA-256 files, tests application installation without changing audio drivers, and creates a **draft release**.
+- GitHub Actions verifies builds on push / pull request. A `v1.3.1` tag matching Cargo.toml builds Setup, portable, source and SHA-256 files, tests application installation without changing audio drivers, and creates a **draft release**.
 - Secrets, tokens, recordings, user settings, `.tools`, `target` and `dist` are excluded from the source package.
 - To release a new version, update Cargo.toml and `assets/app.rc`, then create and push the matching tag. The repository owner publishes the draft after verification.
 

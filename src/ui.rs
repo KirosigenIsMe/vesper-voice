@@ -205,19 +205,15 @@ struct Settings {
 }
 impl Default for Settings {
     fn default() -> Self {
-        let (i, o) = audio::defaults();
-        let route = audio::devices()
-            .1
-            .into_iter()
-            .find(|s| audio::is_virtual_output(s))
-            .unwrap_or_else(|| o.clone());
+        // Deserialization must not initialize COM or enumerate audio hardware.
+        // Resolve device defaults once, when opening the actual studio window.
         Self {
             language: Language::default(),
             params: presets::factory()[1].params,
             selected: 1,
-            input: i,
-            output: route,
-            monitor_device: o,
+            input: String::new(),
+            output: String::new(),
+            monitor_device: String::new(),
             monitor: false,
             buffer_ms: 24,
             favorites: vec!["Velvet".into(), "Android".into(), "Broadcast".into()],
@@ -383,15 +379,19 @@ impl Studio {
         cfg.selected = cfg.selected.min(all.len() - 1);
         let shared = Shared::new(cfg.params);
         let (inputs, outputs) = audio::devices();
+        let (default_input, default_output) = audio::defaults();
         if !inputs.contains(&cfg.input) {
-            cfg.input = audio::defaults().0;
+            cfg.input = default_input;
         }
         if !outputs.contains(&cfg.output) {
             cfg.output = outputs
                 .iter()
                 .find(|s| s.to_lowercase().contains("cable input"))
                 .cloned()
-                .unwrap_or_else(|| audio::defaults().1);
+                .unwrap_or_else(|| default_output.clone());
+        }
+        if !outputs.contains(&cfg.monitor_device) {
+            cfg.monitor_device = default_output;
         }
         let args: Vec<_> = std::env::args().collect();
         let qa = args
