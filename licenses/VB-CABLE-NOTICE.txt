@@ -1,0 +1,21 @@
+VB-CABLE is a separate application by VB-Audio Software / Vincent Burel.
+Origin: https://www.vb-cable.com/ (https://vb-audio.com/Cable/)
+VB-CABLE is donationware. All participations are welcome.
+Support or obtain a license: https://vb-audio.com/Services/licensing.htm
+
+VESPER is free software. Its GPL license does not apply to VB-CABLE.
+The original base VB-CABLE package is redistributed without modifying its files.
+The original end-user terms remain available in VirtualCable/readme.txt.
+
+The current VB-Audio distribution policy explicitly permits bundling the base
+VB-CABLE package and silent installation when the donationware model remains
+applicable. Users must be able to identify VB-CABLE and support its author.
+Policy: https://vb-audio.com/Services/licensing.htm
+Policy checked: 2026-11-14. A reference snapshot is in docs/legal.
+
+Professional or organizational deployments may require separate VB-CABLE
+licenses under the vendor's terms. Extra cables A+B / C+D are not bundled.
+Windows may require administrator permission and a reboot for driver setup.
+
+Removing VESPER does not uninstall the shared VB-CABLE driver. Other programs
+may use it. VB-CABLE can be removed separately using its official installer.

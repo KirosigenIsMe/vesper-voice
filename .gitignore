@@ -1,0 +1,14 @@
+/dist/
+/target/
+/.tools/
+/benchmark-results/
+/diagnostics/
+/performance/
+*.log
+*.wav
+*.pdb
+*.tmp
+.env
+.env.*
+.DS_Store
+Thumbs.db

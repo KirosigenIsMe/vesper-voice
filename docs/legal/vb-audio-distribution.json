@@ -1,0 +1,10 @@
+{
+  "vendor": "VB-Audio Software",
+  "product": "Base VB-CABLE",
+  "policy_url": "https://vb-audio.com/Services/licensing.htm",
+  "checked_on": "2026-11-14",
+  "permission_excerpt": "VB-CABLE may also be embedded in your installer and deployed through a silent installation process",
+  "conditions_summary": "Keep the base package unmodified. Clearly identify VB-Audio and VB-CABLE as donationware and offer users the opportunity to support its author. Professional/organizational deployments may require separate licenses. Additional A+B and C+D cables are not included in this permission.",
+  "package": "VBCABLE_Driver_Pack46.zip",
+  "package_sha256": "bc44e8974191a5a2427d6c979e2dab08dbb09925f3f435dfa2f0ba3e45b6eb90"
+}

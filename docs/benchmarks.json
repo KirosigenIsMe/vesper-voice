@@ -1,0 +1,22 @@
+{
+  "measured_version": "1.1.1",
+  "date": "2026-11-14",
+  "cpu": "Intel Core i5-12450H",
+  "logical_processors": 12,
+  "dsp": {
+    "sample_rate_hz": 48000,
+    "audio_seconds": 240,
+    "repeats": 5,
+    "baseline_sum_median_ms": 1551.3754000000006,
+    "optimized_sum_median_ms": 1110.3878999999995,
+    "bit_exact_compared_samples": 3456000
+  },
+  "live": {
+    "duration_ms": 26976.418,
+    "snapshots": 20,
+    "mode": "system microphone active; main app plus recovery watchdog",
+    "private_resident_mib": 37.54296875,
+    "cpu_percent_machine_capacity": 3.6152331887304925
+  },
+  "method": "DSP: precomputed 48 kHz signal, 24 presets x 10 seconds, 480-sample blocks, 5 repetitions, sum of per-preset medians; black_box prevents optimizer removal. Live: Windows PerfProc WorkingSetPrivate, process CPU deltas divided by 12 logical processors. These are observations, not maximum usage or a competitor benchmark."
+}
